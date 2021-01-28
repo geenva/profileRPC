@@ -11,9 +11,8 @@ const imgs = [
 ];
 
 // Set this to your Client ID.
-const clientId = "804140853576597514";
+const clientId = "804140853576597514"; // Your app here!
 
-// Only needed if you want to use spectate, join, or ask to join
 DiscordRPC.register(clientId);
 
 const rpc = new DiscordRPC.Client({ transport: "ipc" });
@@ -28,8 +27,8 @@ const setActivity = async function () {
   }
 
   rpc.setActivity({
-    details: "Responses will be delayed",
-    state: "Unavailable",
+    details: "Hi! I'm me!",
+    state: "Available",
     startTimestamp,
     largeImageKey: largeRand[0],
     largeImageText: "m@inkthought.codes",
