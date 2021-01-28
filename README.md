@@ -8,7 +8,7 @@
 
 ### Setup
 
-Go on the [Discord Developer Portal](https://discord.com/developers/applications) and make a new app. Click on the app, navigate to Rich Presence on the sidebar, and add your assets **at the Rich Presence Assets** column.
+Go on the [Discord Developer Portal](https://discord.com/developers/applications) and make a new app. Click on the app, navigate to Rich Presence on the sidebar, **scroll down**, and add your assets **at the Rich Presence Assets** column.
 
 ![Demo Image](/img/demo.png "Hey! You found me!")  
 
