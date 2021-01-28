@@ -4,14 +4,14 @@
 
 const DiscordRPC = require("./src");
 
+// This is where you add keys! You need to add your assets like this: ["Image Key", "Hover-Over text"]
 const imgs = [
   ["gen", "geneva"],
   ["dot", ".dot"],
   ["friday", "friday the cat"],
 ];
 
-// Set this to your Client ID.
-const clientId = "804140853576597514"; // Your app here!
+const clientId = "804140853576597514"; // Your app here! Here's mine for reference :)
 
 DiscordRPC.register(clientId);
 
@@ -19,19 +19,21 @@ const rpc = new DiscordRPC.Client({ transport: "ipc" });
 const startTimestamp = new Date();
 
 const setActivity = async function () {
+  // Chooses a random image!
   let largeRand = imgs[Math.floor(Math.random() * imgs.length)];
   let smallRand = imgs[Math.floor(Math.random() * imgs.length)];
 
+  // Shuffle images so it won't match!
   while (largeRand === smallRand) {
     smallRand = imgs[Math.floor(Math.random() * imgs.length)];
   }
 
   rpc.setActivity({
-    details: "Hi! I'm me!",
-    state: "Available",
+    details: "Hi! I'm me!", // Customise me!
+    state: "Available", // Customise me!
     startTimestamp,
     largeImageKey: largeRand[0],
-    largeImageText: "m@inkthought.codes",
+    largeImageText: "m@inkthought.codes", // Customise me!
     smallImageKey: smallRand[0],
     smallImageText: smallRand[1],
     instance: false,
@@ -42,7 +44,7 @@ const setActivity = async function () {
           "https://discord.com/oauth2/authorize?client_id=693035835452424193&scope=bot&permissions=76848",
       },
       { label: "my profile", url: "https://dsc.bio/gen" },
-    ],
+    ], // Customise me!
   });
 };
 
