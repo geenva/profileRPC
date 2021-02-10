@@ -26,7 +26,7 @@ cd profileRPC
 ### Install Dependencies
 
 ```sh
-npm inst
+npm run inst
 ```
 
 The next step you want to do, is to edit the app.js file to suit your needs. Replace your Client ID from the app you made, and add custom image keys and text into the array.
